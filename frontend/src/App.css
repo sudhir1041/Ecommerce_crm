@@ -1,0 +1,146 @@
+/* E-commerce Platform Color Scheme */
+:root {
+  /* Primary Colors */
+  --primary-color: #1976d2;
+  --primary-light: #42a5f5;
+  --primary-dark: #1565c0;
+  
+  /* Secondary Colors */
+  --secondary-color: #dc004e;
+  --secondary-light: #ff5983;
+  --secondary-dark: #9a0036;
+  
+  /* Success Colors */
+  --success-color: #2e7d32;
+  --success-light: #4caf50;
+  --success-dark: #1b5e20;
+  
+  /* Warning Colors */
+  --warning-color: #ed6c02;
+  --warning-light: #ff9800;
+  --warning-dark: #e65100;
+  
+  /* Error Colors */
+  --error-color: #d32f2f;
+  --error-light: #f44336;
+  --error-dark: #c62828;
+  
+  /* Info Colors */
+  --info-color: #0288d1;
+  --info-light: #03a9f4;
+  --info-dark: #01579b;
+  
+  /* Background Colors */
+  --bg-primary: #f5f5f5;
+  --bg-secondary: #ffffff;
+  --bg-dark: #121212;
+  
+  /* Text Colors */
+  --text-primary: #212121;
+  --text-secondary: #757575;
+  --text-disabled: #bdbdbd;
+}
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--info-color) 100%);
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.App-link {
+  color: var(--info-light);
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: var(--info-color);
+}
+
+/* Card Styles */
+.card {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+}
+
+/* Button Styles */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(25, 118, 210, 0.3);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, var(--success-color) 0%, var(--success-light) 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, var(--success-dark) 0%, var(--success-color) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(46, 125, 50, 0.3);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 20px;
+  }
+  
+  .card {
+    margin: 10px;
+  }
+}
