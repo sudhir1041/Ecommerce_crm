@@ -2,9 +2,9 @@
 
 
 # Python Virtual Environment
-Backend/venv
-Backend/.env
-Backend/db.sqlite3
+backend/venv
+backend/.env
+backend/db.sqlite3
 
 
 # Frontend Node.js
